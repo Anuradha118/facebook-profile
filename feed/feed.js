@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    var myProfileToken='EAACEdEose0cBALhlu672HB8bXQWEqbZAeK7XYlishP45KdCZC2ZCANrcQa7QN0mhn3D3L6utz51ytrx9BhSoMjRuoIGORf47ZA3xyODBZA1D8YGu23GU085RVrgoi4jQmEHOozOIzj6F6UM33GZCURTmhIblufwaVZAc9hwRhb03jeGfP4MqOS3r0V1GVVlHnBnYQunD7pZAQwZDZD';
+    var myProfileToken='EAACEdEose0cBAFHZC5lU555fgTjwQ2lOdNVYaFAX7pZA9McY61KQ5vUNciy2joOZCYqJFjv2Cef6GqSwlqcarGHEeJU56oZCkAUBdpirJuPdBpEyxoVZA1OoEAygRsxY1JeigYdTng0wEUt2ukZBaaZB2DCI8XTWHUiZATtMBV9Gu1oZADd7qDujnAjw2Yao0Md6HjwjVcsbqQwZDZD';
      
     function getFeedInfo(){
         $.ajax('https://graph.facebook.com/me?fields=id,name,feed{story,message,picture,source,type}&access_token='+myProfileToken,{
