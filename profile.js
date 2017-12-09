@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    var myProfileToken='EAACEdEose0cBANpd2lslNHmbm1z5k2lYzIGvXrESgBxCrGxNYiArOQwwekXVDIwhpRihZBOw3869iNy342bLFKMOQTaMW4Oo3BTHc4l95BVcPBtepMOrH8bxoHu3GYRlY9F63DzJ7vD9CHtSEJ9sZCMxJHqHhdgBttpf2biWG0qqK62Jpjr530ZC1rGzdsZD';
+    var myProfileToken='EAACEdEose0cBAPZC85M4J0Dml319iEGMkeqRtR0TyrZA8s9swUnl3y7WlH0aZBZCF0er7x1V8Yglv9a9eub5okTdDigqZAVoHHFNAxgZA0YgCq2FJBelfvRerlG8Vs1DPjpajuV4YNbdmzZCZBGJWbORZBnxSI1ZCJ5PkKk36O37zlZBmvNI8LC69W5fIyGRZBkNxU6lUbXj3XyZAuwZDZD';
      
     function getProfileInfo(){
         $.ajax('https://graph.facebook.com/me?fields=id,hometown,gender,email,about,picture.width(100).height(100),birthday,quotes&access_token='+myProfileToken,{
