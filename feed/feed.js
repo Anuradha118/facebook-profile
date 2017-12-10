@@ -27,6 +27,10 @@ $(document).ready(function(){
                     }
                 })
                  $("#feedList").append(list);         
+            },
+            error:function(response){
+                console.log(response);
+                alert("Error getting details from API "+response.responseJSON.error.message);
             }
         });
     } //end of Feed Info
