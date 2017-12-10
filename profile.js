@@ -14,6 +14,10 @@ $(document).ready(function(){
                 $("#mybday").text(response.birthday);
                 $("#quotes").text(response.quotes);
                 document.getElementById("userPicture").setAttribute("src",response.picture.data.url);         
+            },
+            error:function(response){
+                console.log(response);
+                alert("Something went wrong "+response.responseJSON.error.message);
             }
         });
     } //end of Profile Info
